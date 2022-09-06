@@ -25,4 +25,4 @@ if __name__ == "__main__":
     copy_tree("static", str(site.outpath / Path("static")))
 
     # enable automatic reloading
-    site.render(use_reloader=True)
+    site.render(use_reloader=False)
