@@ -1,0 +1,45 @@
+{% macro md_card() -%}
+<div class="card"><div class="card-content"><div class="content"></div>
+{% markdown %}
+{{caller()}}
+{% endmarkdown %}
+</div></div></div>
+{%- endmacro %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+
+  <body>
+    <div id="fill-page">
+      {# Navbar #}
+      <nav class="navbar" style="background-color: rgba(76, 76, 76, 0.05); position: fixed;">
+        <div class="navbar-brand" style="display: flex; align-items: center">
+          <a class="navbar-item has-text-black" href="index.html">For businesses</a>
+        </div>
+
+        <div class="navbar-menu is-active">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-black" href="collaboration.html">For collaborators</a>
+            <a class="navbar-item has-text-black" href="about.html">About me</a>
+          </div>
+        </div>
+      </nav>
+
+    {% block content %}{% endblock %}
+
+    </div>
+    {# <footer class="footer is-narrow has-background-dark">
+      <div class="content has-text-white-ter">&copy; Viktor P 2022</div>
+    </footer> #}
+  </body>
+</html>

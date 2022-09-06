@@ -1,0 +1,35 @@
+{% set title = "Viktor Petukhov" %}
+{% extends "utils/base.jinja" %}
+
+{% block content %}
+<section class="hero is-fullheight">
+<div class="hero-body">
+{% include "business/front_page.jinja" %}
+</div>
+</section>
+
+<section class="hero is-fullheight has-background-light">
+<div class="hero-body" id="how-can-i-help">
+{% include "business/how_can_help.jinja" %}
+</div>
+</section>
+
+<section class="hero is-fullheight">
+<div class="hero-body" id="portfolio">
+{% include "business/portfolio.jinja" %}
+</div>
+</section>
+
+<section class="hero is-fullheight has-background-light">
+<div class="hero-body" id="methodology">
+{% include "business/methodology.jinja" %}
+</div>
+</section>
+
+<section class="hero is-fullheight">
+<div class="hero-body" id="contact">
+{% include "business/contacts.jinja" %}
+</div>
+</section>
+
+{% endblock %}

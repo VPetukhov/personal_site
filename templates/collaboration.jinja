@@ -1,0 +1,24 @@
+{% set title = "For potential collaborators" %}
+{% extends "utils/base.jinja" %}
+
+{% block content %}
+
+<section class="hero is-fullheight">
+<div class="hero-body">
+{% include "collaborators/scientific_interests.jinja" %}
+</div>
+</section>
+
+<section class="hero is-fullheight">
+<div class="hero-body">
+{% include "collaborators/portfolio.jinja" %}
+</div>
+</section>
+
+<section class="hero is-fullheight">
+<div class="hero-body">
+{% include "collaborators/contacts.jinja" %}
+</div>
+</section>
+
+{% endblock %}

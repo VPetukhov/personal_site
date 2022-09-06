@@ -1,0 +1,17 @@
+{% set title = "About me" %}
+{% extends "utils/base.jinja" %}
+
+{% block content %}
+
+<section class="hero is-fullheight">
+<div class="hero-body">
+{% include "about/bio.jinja" %}
+</div>
+</section>
+
+
+<section class="hero is-fullheight">
+<iframe src="https://bibbase.org/show?bib=https%3A%2F%2Fsealver.in%2Fcitation.bib&commas=true" class="hero-body"></iframe>
+</section>
+
+{% endblock %}
