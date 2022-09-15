@@ -6,41 +6,60 @@
     <div class="columns">
         {% include "utils/card_start.jinja" %}
         {% markdown %}
-        ### Modularity of neural networks
+        ### [Modularity of neural networks](https://www.lesswrong.com/posts/QEmfyhqMcSpfnY2dX/how-teams-went-about-their-research-at-ai-safety-camp#Modularity_Loss_Function) *([code](https://github.com/VPetukhov/GraphRegularizedNNs))*
 
-        TODO:
+        ![](/static/media/w2v_network.png)
 
-        - short description
-        - link on the post
-        - Explanation of [regularized word2vec](https://github.com/VPetukhov/GraphRegularizedNNs)
+        **Short version**
+        With a team from [AI Safety Camp](https://aisafety.camp/) we worked on enforcing modular structure for neural networks. We developed severaly ways to adjust a loss function to achieve that and demonstrated it on a simple MLP, as well as on a word2vec model.
+
+        **Long version (on click)**
+        In my part, I extended and applied the [Graph Spectral Regularization method](https://arxiv.org/pdf/1810.00424.pdf) created by Tong, *et. al* for enforcing arbitrary graph structures. First, it allowed to convert word2vec embedding into a visual field, which could be easily inspected by eyes (similar to how CNNs are analysed). Second, we could train word2vec so the neurons were groupped into five modules, which, supposedly, correspond to high-level features of the texts.
+
         {% endmarkdown %}
         {% include "utils/card_end.jinja" %}
 
         {% include "utils/card_start.jinja" %}
         {% markdown %}
 
-        ### Visualization of collection of documents
+        ### [Visualization of collections of documents](https://www.lesswrong.com/posts/b5nGqKvDs7vDFDGEN/interactive-exploration-of-lesswrong-and-other-large)
 
-        TODO:
 
-        - short description
-        - link to the post
+        ![](/static/media/gpt_paper_vis.png)
+        
+        *Я ещё исправлю эту картинку, чтобы она хорошо выглядела в маленьком размере*
+
+        **Short version.** During my PhD I was looking for information on areas I don't understand. There, conventional search engines give a very small subset of the information on the topic. It leaves you very little idea of what you miss and even how much missing information is there in total. So, we created a tool for building an overview of large collections of documents.
+
+        **Long version (on click)**
+        
+        *У меня есть интерактивная версия картинки. Будет нечто вроде <a href="/embeds/umap_gpt_cit.html" target="_blank" rel="noopener noreferrer">этого</a>. Я её ещё приукрашу, и нужно, чтобы в полной версии вместо картинки была вставка с таким html.*
 
         {% endmarkdown %}
         {% include "utils/card_end.jinja" %}
-
+    </div>
+    <div class="columns">
         {% include "utils/card_start.jinja" %}
         {% markdown %}
 
         ### Visual search engine
 
-        TODO:
+        *Here will be a picture and a link for the service*
 
-        - Make a showcase
+        Continuing the previous visualization idea, I've built a UI for [Semantic Scholar](https://www.semanticscholar.org/), which visualizes top-500 papers matching your search query using only JS and WebAssembly.
 
         {% endmarkdown %}
         {% include "utils/card_end.jinja" %}
 
+        {% include "utils/card_start.jinja" %}
+        {% markdown %}
+
+        ### Visualization of duma votes
+
+        TODO
+
+        {% endmarkdown %}
+        {% include "utils/card_end.jinja" %}
     </div>
 
 </div>

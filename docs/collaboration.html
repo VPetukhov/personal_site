@@ -41,13 +41,18 @@
 
 <div class="columns">
 <div class="column">
-<h2>Automating research with NLP</h2>
+<h2>Enhancing research by NLP tools</h2>
 <p>My current research interests are about enhancing human research capabilities with AI, data analysis and tech in general. At the moment I&rsquo;m looking into various ways to use NLP to simplify working with existing literature, such as search, summarization and automated reasoning (broadly, the agenda is inspired by <a href="https://allenai.org/">AllenAI</a> and <a href="https://ought.org/">Ought</a>).</p>
 </div>
 
 <div class="column">
 <h2>AI Safety</h2>
 <p>I am also quite interested in AI Safety, explainability of neural networks and formal guarantees on machine learning algorithms. I have a vast experience of working with graphs, including Graph Signal Processing, which I&rsquo;d be interested to apply to studying neural networks, particularly using the framework of the Complexity Theory.</p>
+</div>
+
+<div class="column">
+<h2>AI + politics</h2>
+<p>Expanding on the idea of enhancing the human capabilities, one especially interesting application is policy-making and political research. Data science is uniquely suited for contributing towards <a href="https://en.wikipedia.org/wiki/Evidence-based_policing" target="_blank" rel="noopener noreferrer">evidence-based policy-making</a>, as well as providing trustworthy information for general audience. Here I&rsquo;m particularly excited about work of <a href="https://ourworldindata.org/" target="_blank" rel="noopener noreferrer">Our World in Data</a> and <a href="https://www.bellingcat.com/" target="_blank" rel="noopener noreferrer">bellingcat</a>. So, I&rsquo;m looking for ways to apply data scrapping and NLP to find insights on pressing political and social issues.</p>
 </div>
 
 </div>
@@ -67,36 +72,40 @@
         <div class="card column m-4">
 <div class="card-content">
 <div class="content">
-        <h3>Modularity of neural networks</h3>
-<p>TODO:</p>
-<ul>
-<li>short description</li>
-<li>link on the post</li>
-<li>Explanation of <a href="https://github.com/VPetukhov/GraphRegularizedNNs">regularized word2vec</a></li>
-</ul>
+        <h3><a href="https://www.lesswrong.com/posts/QEmfyhqMcSpfnY2dX/how-teams-went-about-their-research-at-ai-safety-camp#Modularity_Loss_Function">Modularity of neural networks</a> <em>(<a href="https://github.com/VPetukhov/GraphRegularizedNNs">code</a>)</em></h3>
+<p><img alt="" src="/static/media/w2v_network.png" /></p>
+<p><strong>Short version</strong>
+With a team from <a href="https://aisafety.camp/">AI Safety Camp</a> we worked on enforcing modular structure for neural networks. We developed severaly ways to adjust a loss function to achieve that and demonstrated it on a simple MLP, as well as on a word2vec model.</p>
+<p><strong>Long version (on click)</strong>
+In my part, I extended and applied the <a href="https://arxiv.org/pdf/1810.00424.pdf">Graph Spectral Regularization method</a> created by Tong, <em>et. al</em> for enforcing arbitrary graph structures. First, it allowed to convert word2vec embedding into a visual field, which could be easily inspected by eyes (similar to how CNNs are analysed). Second, we could train word2vec so the neurons were groupped into five modules, which, supposedly, correspond to high-level features of the texts.</p>
         </div></div></div>
 
         <div class="card column m-4">
 <div class="card-content">
 <div class="content">
-        <h3>Visualization of collection of documents</h3>
-<p>TODO:</p>
-<ul>
-<li>short description</li>
-<li>link to the post</li>
-</ul>
+        <h3><a href="https://www.lesswrong.com/posts/b5nGqKvDs7vDFDGEN/interactive-exploration-of-lesswrong-and-other-large">Visualization of collections of documents</a></h3>
+<p><img alt="" src="/static/media/gpt_paper_vis.png" /></p>
+<p><em>Я ещё исправлю эту картинку, чтобы она хорошо выглядела в маленьком размере</em></p>
+<p><strong>Short version.</strong> During my PhD I was looking for information on areas I don&rsquo;t understand. There, conventional search engines give a very small subset of the information on the topic. It leaves you very little idea of what you miss and even how much missing information is there in total. So, we created a tool for building an overview of large collections of documents.</p>
+<p><strong>Long version (on click)</strong></p>
+<p><em>У меня есть интерактивная версия картинки. Будет нечто вроде <a href="/embeds/umap_gpt_cit.html" target="_blank" rel="noopener noreferrer">этого</a>. Я её ещё приукрашу, и нужно, чтобы в полной версии вместо картинки была вставка с таким html.</em></p>
         </div></div></div>
-
+    </div>
+    <div class="columns">
         <div class="card column m-4">
 <div class="card-content">
 <div class="content">
         <h3>Visual search engine</h3>
-<p>TODO:</p>
-<ul>
-<li>Make a showcase</li>
-</ul>
+<p><em>Here will be a picture and a link for the service</em></p>
+<p>Continuing the previous visualization idea, I&rsquo;ve built a UI for <a href="https://www.semanticscholar.org/">Semantic Scholar</a>, which visualizes top-500 papers matching your search query using only JS and WebAssembly.</p>
         </div></div></div>
 
+        <div class="card column m-4">
+<div class="card-content">
+<div class="content">
+        <h3>Visualization of duma votes</h3>
+<p>TODO</p>
+        </div></div></div>
     </div>
 
 </div>
